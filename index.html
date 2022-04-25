@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<title>Universal AR</title>
+  <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
+  <script src="https://libs.zappar.com/zappar-aframe/0.3.36/zappar-aframe.js"></script>
+</head>
+<body>
+      <assets>
+        <a-asset-item id="target-file" src="assets_marker/kucing.zpt"/>
+      </assets>
+      <a-entity zappar-image="#target-file">
+        <a-box color="red" ></a-box>
+      </a-entity>
+      <a-entity camera zappar-camera></a-entity>
+    </a-scene>
+</body>
+</html>
